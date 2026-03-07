@@ -1,0 +1,57 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar/NavBar.astro";
+import Footer from "../components/Footer/Footer.astro";
+import Background from "../components/UI/Background.astro";
+import "aos/dist/aos.css";
+import { PERSONAL_INFO } from "../data/personal";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{PERSONAL_INFO.siteName}</title>
+	</head>
+	<body class="text-white">
+		<Background />
+		<Navbar />
+		<slot />
+		<Footer />
+
+		<style is:global>
+			html,
+			body {
+				overflow-x: hidden;
+			}
+			html {
+				font-family: system-ui, sans-serif;
+				scroll-behavior: smooth;
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				html {
+					scroll-behavior: auto;
+				}
+			}
+		</style>
+
+		<script>
+			import AOS from "aos";
+			AOS.init({
+				duration: 2000,
+				easing: "ease-out-cubic",
+				once: true,
+				offset: 100,
+			});
+		</script>
+	</body>
+</html>

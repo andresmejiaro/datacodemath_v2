@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+.primary {
+  color: #2563eb;
+}
+.secondary {
+  color: #1d4ed8;
+}
+.bg-primary {
+  background-color: #2563eb;
+}
+.bg-secondary {
+  background-color: #1d4ed8;
+}
+.text-primary {
+  color: #2563eb;
+}
+
+/* reglas hover (usar estas clases directamente) */
+.hover-text-secondary:hover {
+  color: #2563eb;
+}
+.hover-bg-secondary:hover {
+  background-color: #2563eb;
+}
+.hover\:bg-secondary:hover {
+  background-color: #1d4ed8;
+}
+.hover\:text-secondary:hover {
+  color: #1d4ed8;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 0 #1d4ed8;
+}

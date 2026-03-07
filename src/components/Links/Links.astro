@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon/components";
+import { PERSONAL_INFO } from "../../data/personal";
+
+interface Props {
+    class?: string;
+}
+
+const { class: className } = Astro.props;
+const [linkedin, github, email] = PERSONAL_INFO.socialLinks;
+---
+
+<div class:list={["flex items-center gap-6 mb-6", className]}>
+    <a
+        href={linkedin?.href ?? "https://linkedin.com"}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-primary hover:text-blue-400 transition-all duration-300 hover:scale-110"
+        aria-label="LinkedIn"
+    >
+        <Icon name="lucide:linkedin" class="size-6 md:size-8" />
+    </a>
+
+    <a
+        href={github?.href ?? "https://github.com"}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-primary hover:text-blue-400 transition-all duration-300 hover:scale-110"
+        aria-label="GitHub"
+    >
+        <Icon name="lucide:github" class="size-6 md:size-8" />
+    </a>
+
+    <a
+        href={email?.href ?? "mailto:you@example.com"}
+        class="text-primary hover:text-blue-400 transition-all duration-300 hover:scale-110"
+        aria-label="Email"
+    >
+        <Icon name="lucide:mail" class="size-6 md:size-8" />
+    </a>
+</div>
+
+<style>
+    .text-primary {
+        color: #2563eb;
+    }
+</style>

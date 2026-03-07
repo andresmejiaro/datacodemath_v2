@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" fill="none">
+  <rect width="720" height="720" rx="48" fill="#0f172a"/>
+  <rect x="24" y="24" width="672" height="672" rx="32" stroke="#2563eb" stroke-width="4" stroke-dasharray="16 12"/>
+  <circle cx="360" cy="280" r="120" fill="#1e3a8a"/>
+  <path d="M160 570c33-102 112-154 200-154s167 52 200 154" fill="#1d4ed8"/>
+  <text x="360" y="654" text-anchor="middle" fill="#eff6ff" font-size="44" font-family="Arial, sans-serif">[YOUR AVATAR]</text>
+</svg>

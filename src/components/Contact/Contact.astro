@@ -1,0 +1,36 @@
+---
+import { PERSONAL_INFO } from "../../data/personal";
+import Section from "../UI/Section.astro";
+---
+
+<Section id="contact" title="Get in Touch" titleClassName="mb-8">
+    <p
+        class="text-xl text-gray-400 mb-16 text-center max-w-2xl font-light"
+        data-aos="fade-up"
+        data-aos-delay="200"
+    >
+        I'm always open to discussing new projects, creative ideas or
+        opportunities to be part of your visions.
+    </p>
+
+    <!-- Links -->
+    <div
+        class="w-full max-w-xl space-y-6"
+        data-aos="fade-up"
+        data-aos-delay="400"
+    >
+        {
+            PERSONAL_INFO.socialLinks &&
+                PERSONAL_INFO.socialLinks.map((link) => (
+                    <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block font-bold w-full rounded-xl bg-[#2563eb] hover:bg-[#1d4ed8] drop-shadow-[5px_5px_0_#1d4ed8] px-6 py-4 text-center text-white"
+                    >
+                        {link.label}
+                    </a>
+                ))
+        }
+    </div>
+</Section>
