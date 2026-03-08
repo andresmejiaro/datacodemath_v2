@@ -15,7 +15,7 @@ import Badge from "../UI/Badge.astro";
             <div class="absolute -inset-1 rounded-2xl"></div>
             <div class="relative">
                 <img
-                    src={PERSONAL_INFO.avatarUrl}
+                    src={`${import.meta.env.BASE_URL}${PERSONAL_INFO.avatarUrl.replace(/^\//, '')}`}
                     alt={PERSONAL_INFO.name}
                     class="rounded-2xl w-full max-w-sm object-cover"
                 />
