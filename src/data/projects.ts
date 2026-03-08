@@ -38,7 +38,7 @@ export const TAGS = {
 
 export const PROJECTS = [
     {
-        title: "transcend",
+        title: "ft_transcendence",
         description:
             "Full-stack multiplayer Pong with server-authoritative physics, real-time WebSockets, custom JWT from scratch, OAuth, tournaments, and a curses-based CLI client — 617 commits. Team: andresmejiaro, MatPizzolo, Splix777, HakimHC, adrgonza.",
         link: "",
