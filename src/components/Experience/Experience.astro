@@ -1,0 +1,96 @@
+---
+import { Icon } from "astro-icon/components";
+import Section from "../UI/Section.astro";
+import { EXPERIENCE, EDUCATION, CERTIFICATIONS } from "../../data/experience";
+import { PERSONAL_INFO } from "../../data/personal";
+---
+
+<Section id="experience" title="Experience" titleClassName="mb-16">
+    <div class="w-full max-w-4xl">
+
+        <!-- Timeline -->
+        <div class="relative">
+            <!-- Vertical line -->
+            <div class="absolute left-4 top-0 bottom-0 w-px bg-white/10 hidden sm:block"></div>
+
+            <div class="flex flex-col gap-10">
+                {EXPERIENCE.map((item) => (
+                    <div class="sm:pl-14 relative" data-aos="fade-up">
+                        <!-- Dot -->
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-gray-950 hidden sm:block"></div>
+
+                        <div class="rounded-2xl border border-white/10 bg-gray-900/60 p-6 hover:border-primary/40 transition-colors">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-3">
+                                <div>
+                                    <span class="text-xl font-bold text-white">{item.role}</span>
+                                    <span class="text-primary font-semibold"> @ {item.company}</span>
+                                </div>
+                                <span class="text-sm text-gray-400 shrink-0">{item.period}</span>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed mb-4">{item.description}</p>
+                            <div class="flex flex-wrap gap-2">
+                                {item.tags.map((tag) => (
+                                    <span class="text-xs text-blue-300 bg-blue-900/30 px-2 py-1 rounded-full">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        <!-- Education + Certs row -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Education -->
+            <div data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <Icon name="lucide:graduation-cap" class="size-5 text-primary" />
+                    Education
+                </h3>
+                <div class="flex flex-col gap-4">
+                    {EDUCATION.map((edu) => (
+                        <div class="rounded-xl border border-white/10 bg-gray-900/40 p-4">
+                            <div class="text-white font-semibold">{edu.degree}</div>
+                            <div class="text-gray-400 text-sm">{edu.institution} · {edu.year}</div>
+                            {edu.note && (
+                                <div class="text-xs text-primary mt-1">{edu.note}</div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <Icon name="lucide:badge-check" class="size-5 text-primary" />
+                    Certifications
+                </h3>
+                <div class="flex flex-col gap-3">
+                    {CERTIFICATIONS.map((cert) => (
+                        <div class="rounded-xl border border-white/10 bg-gray-900/40 p-4 flex items-center justify-between">
+                            <span class="text-gray-300 text-sm">{cert.name}</span>
+                            <span class="text-xs text-gray-500 shrink-0 ml-3">{cert.year}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+
+        <!-- LinkedIn CTA -->
+        <div class="mt-12 text-center" data-aos="fade-up">
+            <a
+                href={PERSONAL_INFO.socialLinks.find(l => l.label === "LinkedIn")?.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150 drop-shadow-[2px_2px_0_#1d4ed8] active:translate-0.5 active:drop-shadow-none"
+            >
+                <Icon name="lucide:linkedin" class="size-5" />
+                Full CV on LinkedIn
+            </a>
+        </div>
+    </div>
+</Section>

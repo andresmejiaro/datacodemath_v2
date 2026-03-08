@@ -37,7 +37,11 @@ function excerpt(markdown: string): string {
             </a>
           </h3>
           <p class="text-gray-300 leading-relaxed mb-4">{excerpt(post.body)}</p>
-          <div class="text-sm text-blue-200">Placeholder content for theme preview.</div>
+          <div class="flex flex-wrap gap-2">
+            {post.data.tags.map((tag: string) => (
+              <span class="text-xs text-blue-300 bg-blue-900/30 px-2 py-1 rounded-full">#{tag}</span>
+            ))}
+          </div>
         </article>
       ))
     }

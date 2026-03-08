@@ -2,6 +2,7 @@
 import Links from "../Links/Links.astro";
 import Title from "../UI/Title.astro";
 import { PERSONAL_INFO } from "../../data/personal";
+import StatsBanner from "../Banners/StatsBanner.astro";
 ---
 
 <header
@@ -32,4 +33,8 @@ import { PERSONAL_INFO } from "../../data/personal";
       Read the blog
     </a>
   </main>
+
+  <div class="absolute bottom-8 left-0 right-0">
+    <StatsBanner />
+  </div>
 </header>

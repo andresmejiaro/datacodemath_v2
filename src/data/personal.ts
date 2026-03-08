@@ -1,21 +1,21 @@
 export const PERSONAL_INFO = {
     siteName: "datacodemath",
-    name: "[YOUR NAME]",
-    avatarUrl: "/images/your-avatar.svg",
+    name: "Andrés Mejia",
+    avatarUrl: "/images/ghphoto.jpeg",
     title: "Who stands behind the code?",
     description:
-        "I am a developer focused on practical software, AI tooling, and clear documentation. This section is placeholder copy for theme preview and should be customized before launch.",
+        "I work as a Gen AI / ML Engineer at Capgemini, building with Python, C#, and cloud-native AI tooling. My background combines applied statistics, data science, and hands-on systems programming — I design things that actually run on real hardware with real constraints.",
     journey:
-        "I build in public, share implementation notes, and iterate fast while keeping systems maintainable and reliable.",
-    skills: ["AI Tooling", "Product Engineering", "Developer Experience"],
-    heroDescription: "I build things and write about what I learn.",
-    resumeUrl: "/posts/welcome",
+        "I went from applied math and data science to building AI agents and infrastructure. I care about making things work end-to-end, not just in a notebook.",
+    skills: ["Python", "Machine Learning", "LLM Orchestration", "Reinforcement Learning", "Cloud AI (Azure/AWS)", "C"],
+    heroDescription: "I build AI-powered systems and practical software — from reinforcement learning agents to LLM-orchestrated pipelines.",
+    resumeUrl: "/about",
     socialLinks: [
         {
-            href: "https://www.linkedin.com/in/your-profile",
+            href: "https://www.linkedin.com/in/andresmejiaro",
             label: "LinkedIn",
         },
-        { href: "https://github.com/your-profile", label: "GitHub" },
-        { href: "mailto:you@example.com", label: "Email" },
+        { href: "https://github.com/andresmejiaro", label: "GitHub" },
+        { href: "mailto:datacodemath@gmail.com", label: "Email" },
     ],
 };

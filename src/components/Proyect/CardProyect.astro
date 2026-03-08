@@ -30,7 +30,7 @@ const { image, title, description, tags, link, github } = Astro.props;
         >
             <img
                 alt={title}
-                class="object-cover object-top w-full aspect-video transition duration-500 md:scale-110 md:group-hover:scale-105"
+                class="object-contain w-full aspect-video bg-gray-950"
                 loading="lazy"
                 src={image}
             />
