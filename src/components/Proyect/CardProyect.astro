@@ -32,7 +32,7 @@ const { image, title, description, tags, link, github } = Astro.props;
                 alt={title}
                 class="object-contain w-full aspect-video bg-gray-950"
                 loading="lazy"
-                src={`${import.meta.env.BASE_URL}${image}`}
+                src={image}
             />
         </div>
     </div>

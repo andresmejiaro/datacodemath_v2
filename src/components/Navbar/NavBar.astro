@@ -1,6 +1,5 @@
 ---
 import { PERSONAL_INFO } from "../../data/personal";
-const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <div class="relative">
@@ -10,14 +9,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
     class="fixed top-0 left-0 w-full z-50 bg-gray-950/20 backdrop-blur-md border-b border-white/10"
   >
     <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-      <a href={`${base}/`} class="flex items-center">
+      <a href="/" class="flex items-center">
         <h3 class="text-white text-2xl font-bold text-shadow-blue">{PERSONAL_INFO.siteName}</h3>
       </a>
 
       <ul class="hidden md:flex space-x-8 items-center">
         <li>
           <a
-            href={`${base}/#home`}
+            href="/#home"
             class="relative group text-white font-bold transition-colors duration-300 hover:text-secondary"
             ><span
               class="absolute left-0 -bottom-2 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
@@ -26,7 +25,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         </li>
         <li>
           <a
-            href={`${base}/#about`}
+            href="/#about"
             class="relative group text-white font-bold transition-colors duration-300 hover:text-secondary"
             ><span
               class="absolute left-0 -bottom-2 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
@@ -35,7 +34,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         </li>
         <li>
           <a
-            href={`${base}/#experience`}
+            href="/#experience"
             class="relative group text-white font-bold transition-colors duration-300 hover:text-secondary"
             ><span
               class="absolute left-0 -bottom-2 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
@@ -44,7 +43,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         </li>
         <li>
           <a
-            href={`${base}/#projects`}
+            href="/#projects"
             class="relative group text-white font-bold transition-colors duration-300 hover:text-secondary"
             ><span
               class="absolute left-0 -bottom-2 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
@@ -53,7 +52,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         </li>
         <li>
           <a
-            href={`${base}/#writing`}
+            href="/#writing"
             class="relative group text-white font-bold transition-colors duration-300 hover:text-secondary"
             ><span
               class="absolute left-0 -bottom-2 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
@@ -62,7 +61,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         </li>
         <li>
           <a
-            href={`${base}/activity`}
+            href="/activity"
             class="relative group text-white font-bold transition-colors duration-300 hover:text-secondary"
             ><span
               class="absolute left-0 -bottom-2 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
@@ -71,7 +70,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         </li>
         <li>
           <a
-            href={`${base}/#contact`}
+            href="/#contact"
             class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
          drop-shadow-[2px_2px_0_#1d4ed8] active:translate-0.5 active:drop-shadow-none"
           >
@@ -122,26 +121,26 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   >
     <ul class="flex flex-col space-y-6 mt-10 ml-6">
       <li>
-        <a href={`${base}/#home`} class="text-white text-lg font-bold hover:text-secondary">Home</a>
+        <a href="/#home" class="text-white text-lg font-bold hover:text-secondary">Home</a>
       </li>
       <li>
-        <a href={`${base}/#about`} class="text-white text-lg font-bold hover:text-secondary">About</a>
+        <a href="/#about" class="text-white text-lg font-bold hover:text-secondary">About</a>
       </li>
       <li>
-        <a href={`${base}/#experience`} class="text-white text-lg font-bold hover:text-secondary">Experience</a>
+        <a href="/#experience" class="text-white text-lg font-bold hover:text-secondary">Experience</a>
       </li>
       <li>
-        <a href={`${base}/#projects`} class="text-white text-lg font-bold hover:text-secondary">Projects</a>
+        <a href="/#projects" class="text-white text-lg font-bold hover:text-secondary">Projects</a>
       </li>
       <li>
-        <a href={`${base}/#writing`} class="text-white text-lg font-bold hover:text-secondary">Writing</a>
+        <a href="/#writing" class="text-white text-lg font-bold hover:text-secondary">Writing</a>
       </li>
       <li>
-        <a href={`${base}/activity`} class="text-white text-lg font-bold hover:text-secondary">Activity</a>
+        <a href="/activity" class="text-white text-lg font-bold hover:text-secondary">Activity</a>
       </li>
       <li>
         <a
-          href={`${base}/#contact`}
+          href="/#contact"
           class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
          drop-shadow-[2px_2px_0_#1d4ed8] active:translate-0.5 active:drop-shadow-none"
         >

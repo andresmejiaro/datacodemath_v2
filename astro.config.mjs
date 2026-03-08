@@ -4,8 +4,7 @@ import icon from "astro-icon";
 
 export default defineConfig({
   output: "static",
-  site: "https://andresmejiaro.github.io",
-  base: "/datacodemath_v2",
+  site: "https://datacodemath.com",
   integrations: [icon()],
   vite: {
     plugins: [tailwindcss()]
