@@ -16,6 +16,5 @@ export const PERSONAL_INFO = {
             label: "LinkedIn",
         },
         { href: "https://github.com/andresmejiaro", label: "GitHub" },
-        { href: "mailto:datacodemath@gmail.com", label: "Email" },
     ],
 };

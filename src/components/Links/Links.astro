@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { class: className } = Astro.props;
-const [linkedin, github, email] = PERSONAL_INFO.socialLinks;
+const [linkedin, github] = PERSONAL_INFO.socialLinks;
 ---
 
 <div class:list={["flex items-center gap-6 mb-6", className]}>
@@ -31,13 +31,7 @@ const [linkedin, github, email] = PERSONAL_INFO.socialLinks;
         <Icon name="lucide:github" class="size-6 md:size-8" />
     </a>
 
-    <a
-        href={email?.href ?? "mailto:you@example.com"}
-        class="text-primary hover:text-blue-400 transition-all duration-300 hover:scale-110"
-        aria-label="Email"
-    >
-        <Icon name="lucide:mail" class="size-6 md:size-8" />
-    </a>
+
 </div>
 
 <style>
