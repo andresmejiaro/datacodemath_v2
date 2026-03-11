@@ -48,6 +48,7 @@ export const EDUCATION = [
 
 export const CERTIFICATIONS = [
     { name: "AWS Certified Data Engineer – Associate", year: "2025" },
+    { name: "Azure AI Engineer Associate (AI-102)", year: "2026" },
     { name: "Azure AI Fundamentals (AI-900)", year: "2026" },
     { name: "Azure Fundamentals (AZ-900)", year: "2026" },
 ];
