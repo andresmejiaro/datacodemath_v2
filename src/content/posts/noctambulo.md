@@ -1,7 +1,7 @@
 ---
 type: blog_post
 title: "Noctambulo"
-publishedAt: 2026-03-11T00:00:00.000Z
+publishedAt: 2026-03-22T15:20:13.000Z
 tags:
   - story
   - ai
