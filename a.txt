@@ -1,0 +1,35 @@
+
+• Implemented the plumbing and wired your Godot executable.
+
+  - Cloned README dependencies into external/:
+      - external/zappy
+      - external/ZAPPY_GC
+  - Wired Godot from your root zip to:
+      - tools/godot/Godot_v4.6.1-stable_linux.x86_64
+      - tools/godot/godot4 (symlink, version 4.6.1)
+
+  Added automation scripts:
+
+  - setup_showcase.sh: clones/builds deps, creates .venv, installs AI package, wires/imports Godot assets.
+  - run_showcase.sh: starts server + AI bots + Godot client, writes logs/PIDs.
+  - stop_showcase.sh: stops all started processes.
+
+  Updated docs/config:
+
+  - README.md:11 with full showcase flow.
+  - .gitignore:13 to ignore cloned deps, Godot binaries, runtime logs/state.
+
+  Validation:
+
+  - scripts/setup_showcase.sh passes.
+  - scripts/stop_showcase.sh passes.
+  - scripts/run_showcase.sh now fails fast with clear logs if server is unreachable (in this sandbox, sockets are blocked with Operation not permitted).
+
+  Use on your machine:
+
+  1. scripts/setup_showcase.sh
+  2. scripts/run_showcase.sh
+  3. Record the running stack (OBS/ffmpeg), then scripts/stop_showcase.sh
+
+  I can’t directly record/render a GUI video from this sandbox, but your project is now set up for recording end-to-end locally.
+
