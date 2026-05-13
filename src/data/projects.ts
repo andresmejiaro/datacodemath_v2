@@ -38,6 +38,15 @@ export const TAGS = {
 
 export const PROJECTS = [
     {
+        title: "zappy",
+        description:
+            "Team 42 project: networked tile-based MMO where autonomous Python agents coordinate without a shared map. I built the AI — a custom behavior-tree framework with async TCP I/O and a queen-protocol swarm. C++ server by PepeSegura & samuelcordero, Godot GUI by Tagamydev.",
+        link: "/posts/zappy-behavior-tree",
+        github: "https://github.com/andresmejiaro/zappy_ai",
+        image: "/projects/zappy-linkedin-gameplay.gif",
+        tags: [TAGS.PYTHON, TAGS.NETWORKING],
+    },
+    {
         title: "ft_transcendence",
         description:
             "Full-stack multiplayer Pong with server-authoritative physics, real-time WebSockets, custom JWT from scratch, OAuth, tournaments, and a curses-based CLI client — 617 commits. Team: andresmejiaro, MatPizzolo, Splix777, HakimHC, adrgonza.",

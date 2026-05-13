@@ -19,10 +19,6 @@ const dateFmt = new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeStyl
 
 <Layout>
   <Section id="activity-page" title="Activity Feed" titleClassName="mb-8">
-    <p class="text-lg text-gray-300 text-center max-w-2xl mb-10">
-      Placeholder feed entries from LinkedIn-style updates. Replace this content before launch.
-    </p>
-
     <div class="w-full max-w-4xl space-y-6">
       {
         rendered.map(({ entry, content }) => {
