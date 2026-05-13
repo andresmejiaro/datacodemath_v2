@@ -7,7 +7,7 @@ tags:
   - ai
   - behavior-trees
   - networking
-  - 42
+  - "42"
 platformVariants:
   linkedin: "Wrote up the AI system I built for the 42 Zappy project — a Python behavior-tree framework driving autonomous agents that coordinate without a shared map. The queen protocol turns relative broadcast directions into a practical coordination center. Full post on the site."
 ---

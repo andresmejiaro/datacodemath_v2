@@ -5,7 +5,7 @@ publishedAt: 2026-05-13T10:00:00.000Z
 tags:
   - c
   - networking
-  - 42
+  - "42"
 platformVariants:
   linkedin: "Made a walkthrough video of zappy — a 42 project where you build a networked tile-based game from scratch in C. Server handles multiple simultaneous clients over TCP, manages game state, and broadcasts updates in real time. AI clients (bots) run the actual gameplay: collecting resources, coordinating incantations to level up. The graphical client visualizes everything live. The interesting part isn't the game — it's keeping the server consistent when dozens of clients are hammering it at once. https://youtu.be/Z4MsLuqpKp8"
 ---
