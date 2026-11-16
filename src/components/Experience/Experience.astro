@@ -73,7 +73,9 @@ import { PERSONAL_INFO } from "../../data/personal";
                     {CERTIFICATIONS.map((cert) => (
                         <div class="rounded-xl border border-white/10 bg-gray-900/40 p-4 flex items-center justify-between">
                             <span class="text-gray-300 text-sm">{cert.name}</span>
-                            <span class="text-xs text-gray-500 shrink-0 ml-3">{cert.year}</span>
+                            {cert.year && (
+                                <span class="text-xs text-gray-500 shrink-0 ml-3">{cert.year}</span>
+                            )}
                         </div>
                     ))}
                 </div>
